@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "encoder", "encoder\encoder.fsproj", "{5B887F83-B1F5-46E4-99DC-677F0E8FC23D}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "decoder", "decoder\decoder.fsproj", "{F9789B3B-22C2-42AC-99DF-978A9AA6ACF5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5B887F83-B1F5-46E4-99DC-677F0E8FC23D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B887F83-B1F5-46E4-99DC-677F0E8FC23D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B887F83-B1F5-46E4-99DC-677F0E8FC23D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B887F83-B1F5-46E4-99DC-677F0E8FC23D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9789B3B-22C2-42AC-99DF-978A9AA6ACF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9789B3B-22C2-42AC-99DF-978A9AA6ACF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9789B3B-22C2-42AC-99DF-978A9AA6ACF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9789B3B-22C2-42AC-99DF-978A9AA6ACF5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
