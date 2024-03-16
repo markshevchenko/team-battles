@@ -7,7 +7,10 @@
 
     <ItemGroup>
         <Compile Include="Program.fs"/>
-        <Content Include="code.txt">
+        <Content Include="einstein.txt">
+          <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </Content>
+        <Content Include="it-purple-conf.txt">
           <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
         </Content>
     </ItemGroup>
