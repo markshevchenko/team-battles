@@ -1,4 +1,6 @@
-﻿open System
+﻿module Encoder
+
+open System
 
 type Command =
     | Up of uint
@@ -38,18 +40,19 @@ let makeCommands (rows: string array) =
                 yield Down(1u)
     }
     
-let input =
-    seq {
-        let mutable line = Console.ReadLine()
-        while line <> null do
-            yield line
-            line <- Console.ReadLine()
-    } |> Seq.toArray
+let encode () =
+    let input =
+        seq {
+            let mutable line = Console.ReadLine()
+            while line <> null do
+                yield line
+                line <- Console.ReadLine()
+        } |> Seq.toArray
 
-printfn $"%d{input.Length}"
-printfn $"%d{input |> Seq.map (fun line -> line.Length) |> Seq.max}"
+    printfn $"%d{input.Length}"
+    printfn $"%d{input |> Seq.map (fun line -> line.Length) |> Seq.max}"
 
-let commands = makeCommands input
+    let commands = makeCommands input
 
-commands
-|> Seq.iter (commandToString >> printf "%s")
+    commands
+    |> Seq.iter (commandToString >> printf "%s")

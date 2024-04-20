@@ -1,4 +1,6 @@
-﻿open System
+﻿module Decoder
+
+open System
 open System.Text
 
 type Command =
@@ -68,26 +70,27 @@ let parse_command =
     <|> (parse_direct_command 'R' ||> Right)
     <|> (parse_direct_command 'D' ||> Down)
     <|> (parse_direct_command 'L' ||> Left)
-    <|> (parse_c 'P' >>. parse_any ||> Print) 
-    
-let height = Console.ReadLine() |> int
-let width = Console.ReadLine() |> int
-let input = Console.ReadLine() |> List.ofSeq
-let commands = many parse_command input |> Option.map fst |> Option.defaultValue []
+    <|> (parse_c 'P' >>. parse_any ||> Print)
 
-let mutable screen =
-    let line = String.replicate width " "
-    [| for _ in 1..height -> StringBuilder(line) |]
-let mutable row = 0
-let mutable column = 0
+let decode () =
+    let height = Console.ReadLine() |> int
+    let width = Console.ReadLine() |> int
+    let input = Console.ReadLine() |> List.ofSeq
+    let commands = many parse_command input |> Option.map fst |> Option.defaultValue []
 
-for command in commands do
-    match command with
-    | Up count -> row <- row - count
-    | Right count -> column <- column + count
-    | Down count -> row <- row + count
-    | Left count -> column <- column - count
-    | Print c -> screen.[row].[column] <- c
+    let mutable screen =
+        let line = String.replicate width " "
+        [| for _ in 1..height -> StringBuilder(line) |]
+    let mutable row = 0
+    let mutable column = 0
 
-for line in screen do
-    printfn $"%s{string line}"
+    for command in commands do
+        match command with
+        | Up count -> row <- row - count
+        | Right count -> column <- column + count
+        | Down count -> row <- row + count
+        | Left count -> column <- column - count
+        | Print c -> screen.[row].[column] <- c
+
+    for line in screen do
+        printfn $"%s{string line}"
