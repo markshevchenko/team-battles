@@ -11,4 +11,4 @@
 
 ## Задачи
 
-* [ASCII Art](ascrii-art/README.md)
+* [ASCII Art](ascii-art/README.md)
