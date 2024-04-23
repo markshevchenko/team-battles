@@ -2,13 +2,7 @@
 
 open System
 open System.Text
-
-type Command =
-    | Up of int
-    | Right of int
-    | Down of int
-    | Left of int
-    | Print of char
+open DrawMachine
 
 
 let parse_c (c: char) cs =
@@ -59,12 +53,14 @@ let (<|>) p1 p2 (cs: char list) =
 let make_digits (digits: char list) =
     let number = String.Concat(Array.ofList digits)
     if number = ""
-    then 1
-    else int number
+    then 1u
+    else uint32 number
+
 
 let parse_direct_command letter =
     parse_c letter >>. (many digit) ||> make_digits
     
+
 let parse_command =
     (parse_direct_command 'U' ||> Up)
     <|> (parse_direct_command 'R' ||> Right)
@@ -72,11 +68,14 @@ let parse_command =
     <|> (parse_direct_command 'L' ||> Left)
     <|> (parse_c 'P' >>. parse_any ||> Print)
 
-let decode () =
-    let height = Console.ReadLine() |> int
-    let width = Console.ReadLine() |> int
-    let input = Console.ReadLine() |> List.ofSeq
-    let commands = many parse_command input |> Option.map fst |> Option.defaultValue []
+let decode (input: string array) =
+    let height = input.[0] |> int
+    let width = input.[1] |> int
+    let input = input.[2] |> List.ofSeq
+    let commands =
+        many parse_command input
+        |> Option.map fst
+        |> Option.defaultValue []
 
     let mutable screen =
         let line = String.replicate width " "
@@ -86,10 +85,10 @@ let decode () =
 
     for command in commands do
         match command with
-        | Up count -> row <- row - count
-        | Right count -> column <- column + count
-        | Down count -> row <- row + count
-        | Left count -> column <- column - count
+        | Up count -> row <- row - (int count)
+        | Right count -> column <- column + (int count)
+        | Down count -> row <- row + (int count)
+        | Left count -> column <- column - (int count)
         | Print c -> screen.[row].[column] <- c
 
     for line in screen do

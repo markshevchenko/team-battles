@@ -7,6 +7,7 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <Compile Include="DrawMachine.fs" />
         <Compile Include="Encoder.fs"/>
         <Compile Include="Decoder.fs"/>
         <Compile Include="Program.fs"/>

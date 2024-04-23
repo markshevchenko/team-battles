@@ -7,9 +7,20 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="Huffman.fs" />
     <Compile Include="Prepare.fs" />
     <Compile Include="Encoder.fs" />
+    <Compile Include="Decoder.fs" />
     <Compile Include="Program.fs" />
+    <Content Include="abc_huffman.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="abc_decoded.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="abc_encoded.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
 </Project>

@@ -1,26 +1,8 @@
 ﻿module Encoder
 
-open System
+open DrawMachine
 
-type Command =
-    | Up of uint
-    | Right of uint
-    | Down of uint
-    | Left of uint
-    | Print of char
-    
-let commandToString = function
-    | Up 1u -> "U"
-    | Up count -> "U" + (string count)
-    | Right 1u -> "R"
-    | Right count -> "R" + (string count)
-    | Down 1u -> "D"
-    | Down count -> "D" + (string count)
-    | Left 1u -> "L"
-    | Left count -> "L" + (string count)
-    | Print symbol -> "P" + (string symbol)
-    
-let makeCommands (rows: string array) =
+let private make_commands (rows: string array) =
     seq {
         for row in 0..rows.Length - 1 do
             let mutable skip_length = 0u
@@ -40,19 +22,11 @@ let makeCommands (rows: string array) =
                 yield Down(1u)
     }
     
-let encode () =
-    let input =
-        seq {
-            let mutable line = Console.ReadLine()
-            while line <> null do
-                yield line
-                line <- Console.ReadLine()
-        } |> Seq.toArray
-
+let public encode (input: string array) =
     printfn $"%d{input.Length}"
-    printfn $"%d{input |> Seq.map (fun line -> line.Length) |> Seq.max}"
+    printfn $"%d{input |> Seq.map _.Length |> Seq.max}"
 
-    let commands = makeCommands input
-
-    commands
-    |> Seq.iter (commandToString >> printf "%s")
+    input
+    |> make_commands
+    |> Seq.map _.ToString()
+    |> Seq.iter (printf "%s")
