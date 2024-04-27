@@ -53,15 +53,22 @@ let commands_to_huffman_tree (commands: Command seq) =
     node_stack.Pop()
 
 
-let read_huffman_tree filename =
-    File.ReadLines(filename)
-    |> Seq.map Command.parse
-    |> commands_to_huffman_tree    
+let read_huffman_tree (reader: TextReader) =
+    let count = reader.ReadLine() |> int
+    let commands = seq {
+        for i in 1..count do
+            yield Command.parse (reader.ReadLine())
+    }
+
+    commands_to_huffman_tree commands    
 
 
 let print_commands (stream: Stream) =
-    stream
-    |> count_bytes
-    |> make_huffman_tree
-    |> huffman_tree_to_commands
-    |> Array.iter (printfn "%O")
+    let commands =
+        stream
+        |> count_bytes
+        |> make_huffman_tree
+        |> huffman_tree_to_commands
+        
+    printfn "%d" commands.Length
+    Array.iter (printfn "%O") commands
