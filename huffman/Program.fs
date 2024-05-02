@@ -16,7 +16,7 @@ let main = function
         Encoder.encode root input
         0
         
-    | [| "decode"; table |] ->
+    | [| "decode" |] ->
         let root = read_huffman_tree Console.In
         let input = Console.ReadLine()
         Decoder.decode root input

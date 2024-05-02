@@ -29,7 +29,7 @@ and NodeComparer() =
     interface IComparer<Node> with
         member this.Compare(x, y) =
             if x.count = y.count
-            then StringComparer.InvariantCultureIgnoreCase.Compare(y.id, x.id)
+            then StringComparer.InvariantCulture.Compare(y.id, x.id)
             else int x.count - int y.count
 
 

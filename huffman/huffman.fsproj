@@ -21,6 +21,14 @@
     <Content Include="abc_encoded.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="tolkien_huffman.txt" />
+    <Content Include="tolkien_decoded.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tolkien_encoded.txt" />
+    <Content Include="god_father_huffman.txt" />
+    <Content Include="god_father_decoded.txt" />
+    <Content Include="god_father_encoded.txt" />
   </ItemGroup>
 
 </Project>
