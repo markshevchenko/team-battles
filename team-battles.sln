@@ -4,6 +4,12 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ascii-art", "ascii-art\asci
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "huffman", "huffman\huffman.fsproj", "{CDA3BF73-7371-479F-B46E-54BA6B43E099}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "doc", "doc", "{F330DFBA-348F-46A8-B75E-3E64E139A710}"
+	ProjectSection(SolutionItems) = preProject
+		ascii-art\ascii-art-for-blues.tex = ascii-art\ascii-art-for-blues.tex
+		ascii-art\ascii-art-for-reds.tex = ascii-art\ascii-art-for-reds.tex
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
