@@ -29,8 +29,8 @@ let huffman_tree_to_commands (root: Node option) =
         let rec generate_commands accumulator = function
             | Leaf(byte, _) -> Push byte::accumulator
             | Branch(left, right, _, _) ->
-                let right_subtree = generate_commands accumulator right
-                let tree = generate_commands right_subtree left 
+                let left_subtree = generate_commands accumulator left
+                let tree = generate_commands left_subtree right
                 Combine::tree
                 
         generate_commands [] root |> List.rev |> List.toArray
