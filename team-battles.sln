@@ -13,6 +13,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "doc", "doc", "{F330DFBA-348
 		huffman\huffman_abc.svg = huffman\huffman_abc.svg
 	EndProjectSection
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "caesar", "caesar\caesar.fsproj", "{D0F7EAD4-251B-4999-8F99-F670820D863E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,5 +29,9 @@ Global
 		{CDA3BF73-7371-479F-B46E-54BA6B43E099}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CDA3BF73-7371-479F-B46E-54BA6B43E099}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CDA3BF73-7371-479F-B46E-54BA6B43E099}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0F7EAD4-251B-4999-8F99-F670820D863E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0F7EAD4-251B-4999-8F99-F670820D863E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0F7EAD4-251B-4999-8F99-F670820D863E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0F7EAD4-251B-4999-8F99-F670820D863E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
