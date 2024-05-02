@@ -11,6 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "doc", "doc", "{F330DFBA-348
 		huffman\huffman-for-blues.tex = huffman\huffman-for-blues.tex
 		huffman\huffman-for-reds.tex = huffman\huffman-for-reds.tex
 		huffman\huffman_abc.svg = huffman\huffman_abc.svg
+		caesar\caesar-for-reds.tex = caesar\caesar-for-reds.tex
+		caesar\caesar-for-blues.tex = caesar\caesar-for-blues.tex
 	EndProjectSection
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "caesar", "caesar\caesar.fsproj", "{D0F7EAD4-251B-4999-8F99-F670820D863E}"
