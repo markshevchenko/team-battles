@@ -3,21 +3,21 @@
     <PropertyGroup>
         <OutputType>Exe</OutputType>
         <TargetFramework>net7.0</TargetFramework>
-        <AssemblyName>caesar</AssemblyName>
+        <AssemblyName>number_system</AssemblyName>
     </PropertyGroup>
 
     <ItemGroup>
         <Compile Include="Program.fs"/>
-        <Content Include="tolkien_decoded.txt">
+        <Content Include="ex1_decoded.txt">
           <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
         </Content>
-        <Content Include="tolkien_encoded.txt">
+        <Content Include="ex1_encoded.txt">
           <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
         </Content>
-        <Content Include="forrest_gump_decoded.txt">
+        <Content Include="ex2_decoded.txt">
           <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
         </Content>
-        <Content Include="forrest_gump_encoded.txt">
+        <Content Include="ex2_encoded.txt">
           <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
         </Content>
     </ItemGroup>
