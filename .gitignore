@@ -398,3 +398,9 @@ FodyWeavers.xsd
 *.sln.iml
 
 .idea/
+
+# XeLaTeX
+svg-inkscape/
+*.aux
+*.pdf
+
