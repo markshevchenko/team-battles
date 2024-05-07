@@ -24,9 +24,9 @@ let private make_commands (rows: string array) =
     
 let public encode (input: string array) =
     printfn $"%d{input.Length}"
-    printfn $"%d{input |> Seq.map _.Length |> Seq.max}"
+    printfn $"%d{input |> Seq.map (fun s -> s.Length) |> Seq.max}"
 
     input
     |> make_commands
-    |> Seq.map _.ToString()
+    |> Seq.map (fun command -> command.ToString())
     |> Seq.iter (printf "%s")
