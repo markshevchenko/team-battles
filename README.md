@@ -109,8 +109,8 @@ Eses sdosqk ksav daxw osk dacw s tgp gx uzgugdslwk. Qgm fwnwj cfgo ozsl qgm'jw y
 dotnet run -- decode < forrest-gump-encoded.txt
 ```
 
-[Задача для красных (PDF)](https://github.com/markshevchenko/team-battles/files/15241123/ascii-art-for-reds.pdf) \
-[Задача для синих (PDF)](https://github.com/markshevchenko/team-battles/files/15241126/ascii-art-for-blues.pdf)
+[Задача для красных (PDF)](https://github.com/markshevchenko/team-battles/files/15241145/caesar-for-reds.pdf) \
+[Задача для синих (PDF)](https://github.com/markshevchenko/team-battles/files/15241148/caesar-for-blues.pdf)
 
 ### ASCII Art
 
@@ -146,8 +146,8 @@ R6P-RP'RP'RP-RP-RP.L11DR7P_RP`RP>R4P`RP\RP.RP-RP'RP<L18DR4P_RP.RP'R6P_R6P'RP.RP_
 dotnet run -- decode < einstein-encoded.txt
 ```
 
-[Задача для красных (PDF)]()
-[Задача для синих (PDF)]()
+[Задача для красных (PDF)](https://github.com/markshevchenko/team-battles/files/15241123/ascii-art-for-reds.pdf) \
+[Задача для синих (PDF)](https://github.com/markshevchenko/team-battles/files/15241126/ascii-art-for-blues.pdf)
 
 ### Система счисления
 
@@ -173,8 +173,8 @@ dotnet run -- encode < ex1_decoded.txt
 dotnet run -- decode < ex1_encoded.txt
 ```
 
-[Задача для красных (PDF)]()
-[Задача для синих (PDF)]()
+[Задача для красных (PDF)](https://github.com/markshevchenko/team-battles/files/15241156/number-system-for-reds.pdf) \
+[Задача для синих (PDF)](https://github.com/markshevchenko/team-battles/files/15241155/number-system-for-blues.pdf)
 
 ### Хаффман
 
@@ -259,5 +259,5 @@ cat forrest_gump_huffman.txt forrest_gump_decoded.txt | dotnet run -- encode
 cat forrest_gump_huffman.txt forrest_gump_encoded.txt | dotnet run -- decode
 ```
 
-[Задача для красных (PDF)]()
-[Задача для синих (PDF)]()
+[Задача для красных (PDF)](https://github.com/markshevchenko/team-battles/files/15241160/huffman-for-reds.pdf) \
+[Задача для синих (PDF)](https://github.com/markshevchenko/team-battles/files/15241159/huffman-for-blues.pdf)
