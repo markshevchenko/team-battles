@@ -258,3 +258,6 @@ cat forrest_gump_huffman.txt forrest_gump_decoded.txt | dotnet run -- encode
 ```bash
 cat forrest_gump_huffman.txt forrest_gump_encoded.txt | dotnet run -- decode
 ```
+
+[Задача для красных (PDF)]()
+[Задача для синих (PDF)]()
