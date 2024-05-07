@@ -109,8 +109,8 @@ Eses sdosqk ksav daxw osk dacw s tgp gx uzgugdslwk. Qgm fwnwj cfgo ozsl qgm'jw y
 dotnet run -- decode < forrest-gump-encoded.txt
 ```
 
-[Задача для красных (PDF)]()
-[Задача для синих (PDF)]()
+[Задача для красных (PDF)](https://github.com/markshevchenko/team-battles/files/15241123/ascii-art-for-reds.pdf) \
+[Задача для синих (PDF)](https://github.com/markshevchenko/team-battles/files/15241126/ascii-art-for-blues.pdf)
 
 ### ASCII Art
 
