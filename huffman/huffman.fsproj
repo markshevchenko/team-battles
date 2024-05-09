@@ -48,6 +48,9 @@
     <Content Include="forrest_gump_encoded.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="starwars_decoded.txt" />
+    <Content Include="starwars_huffman.txt" />
+    <Content Include="starwars_encoded.txt" />
   </ItemGroup>
 
 </Project>
