@@ -1,41 +1,42 @@
 ﻿open System
 
-let digit_values = dict [ ('0', 0L); ('1', 1L); ('2', 2L); ('3', 3L); ('4', 4L)
-                          ('a', -1L); ('b', -2L); ('c', -3L); ('d', -4L); ('e', -5L) ]
+let digit_values = dict [ ('0', 0); ('1', 1); ('2', 2); ('3', 3); ('4', 4)
+                          ('a', -1); ('b', -2); ('c', -3); ('d', -4); ('e', -5) ]
 
-let value_digits = dict [ (0L, '0'); (1L, '1'); (2L, '2'); (3L, '3'); (4L, '4')
-                          (-1L, 'a'); (-2L, 'b'); (-3L, 'c'); (-4L, 'd'); (-5L, 'e') ]
+let value_digits = dict [ (0, '0'); (1, '1'); (2, '2'); (3, '3'); (4, '4')
+                          (-1, 'a'); (-2, 'b'); (-3, 'c'); (-4, 'd'); (-5, 'e') ]
 
 
 let decode (digits: char seq) =
-    let mutable result = 0L
+    let mutable result = 0
     
     for digit in digits do
         let value = digit_values[digit]
-        result <- 10L * result + value
+        result <- 10 * result + value
 
     result
     
     
-let encode (number: int64) =
+let encode (number: int32) =
     let digits =
         seq {
             let mutable tail = number
             
             while tail > 0 do
-                let mutable value = tail % 10L
-                if value > 4 then value <- value - 10L
-                tail <- (tail - value) / 10L
+                let mutable value = tail % 10
+                if value > 4 then value <- value - 10
+                tail <- (tail - value) / 10
                 yield value_digits[value]
         }
         
-    digits |> Seq.rev |> String.Concat
+    let result = digits |> Seq.rev |> String.Concat
+    if result = "" then "0" else result
 
 
 [<EntryPoint>]
 let main = function
     | [| "encode" |] ->
-        let number = Console.ReadLine() |> int64
+        let number = Console.ReadLine() |> int32
         printfn "%s" (encode number)
         
         0
