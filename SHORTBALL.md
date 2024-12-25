@@ -27,3 +27,7 @@
 ## Микросервисная архитектура
 
 ![Микросервисная архитектура](https://github.com/user-attachments/assets/90f2bef7-2487-408a-b9fd-bddad0c05493)
+
+## Соглашения о вызове языка C
+
+![Untitled](https://github.com/user-attachments/assets/3056736d-7d2c-4677-9c65-8e8ec3d623ed)
