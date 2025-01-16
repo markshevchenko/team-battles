@@ -45,7 +45,7 @@ sequenceDiagram
   Redis->>Microservice: (nil)
   Microservice->>Postgres: SELECT id, value FROM items<br />WHERE id = 314
   Postgres->>Microservice: (314, "Hello, world!")
-  Microservice->>Redis SET 314 "Hello, worlds!"
+  Microservice->>Redis: SET 314 "Hello, worlds!"
   Microservice->>API Gateway: { id: 314, value: "Hello, world!" }
   API Gateway->>Frontend: { id: 314, value: "Hello, world!" }
 ```
