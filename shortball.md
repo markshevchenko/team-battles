@@ -32,8 +32,22 @@
 
 ## Микросервисная архитектура
 
+```mermaid
+sequenceDiagram
+  participant Frontend
+  participant API Gateway
+  participant Microservice
+  participant Redis
+  participant Postgres
+  Frontned->>API Gateway: GET /items/314
+  API Gateway->>Microservice: GET /items/314
+  Microservice->>Redis: GET 314
+  Redis->>Microservice: (nil)
+  Microservice->>Postgres: SELECT id, value FROM items\nWHERE id = 314
+  Postgres->>Microservice: (314, "Hello, world!)
+  Microservice->>Redis SET 314 "Hello, worlds!"
+  Microservice->>API Gateway: { id: 314, value: "Hello, world!" }
+  API Gateway->>Frontend: { id: 314, value: "Hello, world!" }
+```
+
 ![Микросервисная архитектура](https://github.com/user-attachments/assets/90f2bef7-2487-408a-b9fd-bddad0c05493)
-
-## Соглашения о вызове языка C
-
-![Untitled](https://github.com/user-attachments/assets/3056736d-7d2c-4677-9c65-8e8ec3d623ed)
