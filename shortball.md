@@ -43,11 +43,9 @@ sequenceDiagram
   API Gateway->>Microservice: GET /items/314
   Microservice->>Redis: GET 314
   Redis->>Microservice: (nil)
-  Microservice->>Postgres: SELECT id, value FROM items<br />WHERE id = 314
+  Microservice->>Postgres: SELECT id, value FROM items WHERE id = 314
   Postgres->>Microservice: (314, "Hello, world!")
   Microservice->>Redis: SET 314 "Hello, worlds!"
   Microservice->>API Gateway: { id: 314, value: "Hello, world!" }
   API Gateway->>Frontend: { id: 314, value: "Hello, world!" }
 ```
-
-![Микросервисная архитектура](https://github.com/user-attachments/assets/90f2bef7-2487-408a-b9fd-bddad0c05493)
