@@ -54,3 +54,46 @@ sequenceDiagram
   Microservice->>API Gateway: { id: 314, value: "Hello, world!" }
   API Gateway->>Frontend: { id: 314, value: "Hello, world!" }
 ```
+
+## SMTP
+
+```mermaid
+sequenceDiagram
+  participant SMTP Sender
+  participant DNS
+  participant SMTP Reciever
+  SMTP Sender->>DNS: MX_Resource_Record_Question = gmail.com
+  DNS->>SMTP Sender: MX_Record_Record_Answer = smtp.gmail.com,<br />A_Resource_Record = 108.177.15.108
+  SMTP Sender->>SMTP Reciever: SYN,<br />,TCP Port = 25
+  SMTP Reciever->>SMTP Sender: SYN_ACK
+  SMTP Sender->>SMTP Reciever: ACK
+  SMTP Reciever->>SMTP Sender: 220 smtp.gmail.com SMTP Ready\r\n
+  SMTP Sender->>SMTP Reciever: HELO smtp.mail.ru\r\n
+  SMTP Reciever->>SMTP Sender: ACK
+  SMTP Reciever->>DNS: Pointer Query<br />217.69.139.160
+  DNS->>SMTP Reciever: Pointer Reply: smtp.mail.ru
+  SMTP Reciever->>SMTP Sender: 250 smpt.gmail.com \r\n
+  SMTP Sender->>SMTP Reciever: VRFY john.silver jim hawkins\r\n
+  SMTP Reciever->>SMTP Sender: 550 Unknown user: john.silver\r\n
+  SMTP Sender->>SMTP Reciever: VRFY jim.hawkins\r\n
+  SMTP Reciever->>SMTP Sender: 250 OK\r\n
+  SMTP Sender->>SMTP Reciever: VRFY ben.gunn\r\n
+  SMTP Reciever->>SMTP Sender: 250 OK\r\n
+  SMTP Sender->>SMTP Reciever: MAIL FROM:captain.smollett@mail.ru\r\n
+  SMTP Reciever->>SMTP Sender: 250 OK\r\n
+  SMTP Sender->>SMTP Reciever: RCPT TO:john.silver@gmail.com\r\n
+  SMTP Reciever->>SMTP Sender: 250 OK\r\n
+  SMTP Sender->>SMTP Reciever: RCPT TO:jim.hawkins@gmail.com\r\n
+  SMTP Reciever->>SMTP Sender: 250 OK\r\n
+  SMTP Sender->>SMTP Reciever: DATA\r\n
+  SMTP Reciever->>SMTP Sender: 354 Enter e-mail, end with .
+  SMTP Sender->>SMTP Reciever: *Заголовки, пустая строка, текст письма*\r\n
+  SMTP Reciever->>SMTP Sender: ACK
+  SMTP Sender->>SMTP Reciever: .\r\n
+  SMTP Reciever->>SMTP Sender: 250 OK Mail accepted\r\n
+  SMTP Sender->>SMTP Reciever: QUIT
+  SMTP Reciever->>SMTP Sender: FIN
+  SMTP Sender->>SMTP Reciever: ACK
+  SMTP Sender->>SMTP Reciever: FIN
+  SMTP Reciever->>SMTP Sender: ACK
+```
