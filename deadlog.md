@@ -1,5 +1,7 @@
 # Смертельный беклог <br/> (Deadlog)
 
+[Правила в формате PDF :page_facing_up:](https://github.com/user-attachments/files/18443348/deadlog.pdf)
+
 Комплект:
 
 * счётные палочки, 100 штук;
