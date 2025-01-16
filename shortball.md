@@ -39,7 +39,7 @@ sequenceDiagram
   participant Microservice
   participant Redis
   participant Postgres
-  Frontned->>API Gateway: GET /items/314
+  Frontend->>API Gateway: GET /items/314
   API Gateway->>Microservice: GET /items/314
   Microservice->>Redis: GET 314
   Redis->>Microservice: (nil)
