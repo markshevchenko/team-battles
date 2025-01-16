@@ -57,6 +57,9 @@ sequenceDiagram
 
 ## SMTP
 
+Поскольку у DNS-сервера обязанностей немного, в его роли может выступить *Ведущий*.
+Тогда в игру смогут активно играть два игрока.
+
 ```mermaid
 sequenceDiagram
   participant SMTP Sender
@@ -64,7 +67,7 @@ sequenceDiagram
   participant SMTP Reciever
   SMTP Sender->>DNS: MX_Resource_Record_Question = gmail.com
   DNS->>SMTP Sender: MX_Record_Record_Answer = smtp.gmail.com,<br />A_Resource_Record = 108.177.15.108
-  SMTP Sender->>SMTP Reciever: SYN,<br />,TCP Port = 25
+  SMTP Sender->>SMTP Reciever: SYN,<br />TCP Port = 25
   SMTP Reciever->>SMTP Sender: SYN_ACK
   SMTP Sender->>SMTP Reciever: ACK
   SMTP Reciever->>SMTP Sender: 220 smtp.gmail.com SMTP Ready\r\n
