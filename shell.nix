@@ -2,7 +2,7 @@
 
 pkgs.mkShell {
     nativeBuildInputs = with pkgs.buildPackages; [
-        dotnet-sdk_7
+        dotnet-sdk_9
         texliveFull
         gnumake
     ];
