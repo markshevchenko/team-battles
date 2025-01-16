@@ -32,6 +32,11 @@
 
 ## Микросервисная архитектура
 
+Варианты сценария:
+* Просрочен `access_token`, не просрочен `refresh_token`.
+* Просрочены и `access_token` и `refresh_token`.
+* Запись не найдена в Postgres.
+
 ```mermaid
 sequenceDiagram
   participant Frontend
