@@ -1,0 +1,2170 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.1"
+   width="210mm"
+   height="297mm"
+   id="svg288"
+   sodipodi:docname="seq-diag-smtp.svg"
+   inkscape:version="1.3.2 (091e20ef0f, 2023-11-25)"
+   inkscape:export-filename="seq-diag-smtp.pdf"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview288"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.44459929"
+     inkscape:cx="587.04547"
+     inkscape:cy="916.55566"
+     inkscape:window-width="1920"
+     inkscape:window-height="1043"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg288"
+     inkscape:document-units="mm" />
+  <desc
+     id="desc1">%20%20participant%20SMTP%20Sender%0A%20%20participant%20DNS%0A%20%20participant%20SMTP%20Reciever%0A%20%20SMTP%20Sender-%3E%3EDNS%3A%20MX_Resource_Record_Question%20%3D%20gmail.com%0A%20%20DNS-%3E%3ESMTP%20Sender%3A%20MX_Record_Record_Answer%20%3D%20smtp.gmail.com%2C%3Cbr%20%2F%3EA_Resource_Record%20%3D%20108.177.15.108%0A%20%20SMTP%20Sender-%3E%3ESMTP%20Reciever%3A%20SYN%2C%3Cbr%20%2F%3ETCP%20Port%20%3D%2025%0A%20%20SMTP%20Reciever-%3E%3ESMTP%20Sender%3A%20SYN_ACK%0A%20%20SMTP%20Sender-%3E%3ESMTP%20Reciever%3A%20ACK%0A%20%20SMTP%20Reciever-%3E%3ESMTP%20Sender%3A%20220%20smtp.gmail.com%20SMTP%20Ready%5Cr%5Cn%0A%20%20SMTP%20Sender-%3E%3ESMTP%20Reciever%3A%20HELO%20smtp.mail.ru%5Cr%5Cn%0A%20%20SMTP%20Reciever-%3E%3ESMTP%20Sender%3A%20ACK%0A%20%20SMTP%20Reciever-%3E%3EDNS%3A%20Pointer%20Query%3Cbr%20%2F%3E217.69.139.160%0A%20%20DNS-%3E%3ESMTP%20Reciever%3A%20Pointer%20Reply%3A%20smtp.mail.ru%0A%20%20SMTP%20Reciever-%3E%3ESMTP%20Sender%3A%20250%20smpt.gmail.com%20%5Cr%5Cn%0A%20%20SMTP%20Sender-%3E%3ESMTP%20Reciever%3A%20VRFY%20john.silver%20jim%20hawkins%5Cr%5Cn%0A%20%20SMTP%20Reciever-%3E%3ESMTP%20Sender%3A%20550%20Unknown%20user%3A%20john.silver%5Cr%5Cn%0A%20%20SMTP%20Sender-%3E%3ESMTP%20Reciever%3A%20VRFY%20jim.hawkins%5Cr%5Cn%0A%20%20SMTP%20Reciever-%3E%3ESMTP%20Sender%3A%20250%20OK%5Cr%5Cn%0A%20%20SMTP%20Sender-%3E%3ESMTP%20Reciever%3A%20VRFY%20ben.gunn%5Cr%5Cn%0A%20%20SMTP%20Reciever-%3E%3ESMTP%20Sender%3A%20250%20OK%5Cr%5Cn%0A%20%20SMTP%20Sender-%3E%3ESMTP%20Reciever%3A%20MAIL%20FROM%3Acaptain.smollett%40mail.ru%5Cr%5Cn%0A%20%20SMTP%20Reciever-%3E%3ESMTP%20Sender%3A%20250%20OK%5Cr%5Cn%0A%20%20SMTP%20Sender-%3E%3ESMTP%20Reciever%3A%20RCPT%20TO%3Ajohn.silver%40gmail.com%5Cr%5Cn%0A%20%20SMTP%20Reciever-%3E%3ESMTP%20Sender%3A%20250%20OK%5Cr%5Cn%0A%20%20SMTP%20Sender-%3E%3ESMTP%20Reciever%3A%20RCPT%20TO%3Ajim.hawkins%40gmail.com%5Cr%5Cn%0A%20%20SMTP%20Reciever-%3E%3ESMTP%20Sender%3A%20250%20OK%5Cr%5Cn%0A%20%20SMTP%20Sender-%3E%3ESMTP%20Reciever%3A%20DATA%5Cr%5Cn%0A%20%20SMTP%20Reciever-%3E%3ESMTP%20Sender%3A%20354%20Enter%20e-mail%2C%20end%20with%20.%0A%20%20SMTP%20Sender-%3E%3ESMTP%20Reciever%3A%20*%D0%97%D0%B0%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%D0%BA%D0%B8%2C%20%D0%BF%D1%83%D1%81%D1%82%D0%B0%D1%8F%20%D1%81%D1%82%D1%80%D0%BE%D0%BA%D0%B0%2C%20%D1%82%D0%B5%D0%BA%D1%81%D1%82%20%D0%BF%D0%B8%D1%81%D1%8C%D0%BC%D0%B0*%5Cr%5Cn%0A%20%20SMTP%20Reciever-%3E%3ESMTP%20Sender%3A%20ACK%0A%20%20SMTP%20Sender-%3E%3ESMTP%20Reciever%3A%20.%5Cr%5Cn%0A%20%20SMTP%20Reciever-%3E%3ESMTP%20Sender%3A%20250%20OK%20Mail%20accepted%5Cr%5Cn%0A%20%20SMTP%20Sender-%3E%3ESMTP%20Reciever%3A%20QUIT%0A%20%20SMTP%20Reciever-%3E%3ESMTP%20Sender%3A%20FIN%0A%20%20SMTP%20Sender-%3E%3ESMTP%20Reciever%3A%20ACK%0A%20%20SMTP%20Sender-%3E%3ESMTP%20Reciever%3A%20FIN%0A%20%20SMTP%20Reciever-%3E%3ESMTP%20Sender%3A%20ACK%0A</desc>
+  <defs
+     id="defs1" />
+  <g
+     id="g288"
+     transform="matrix(0.58179022,0,0,0.58179022,52.118557,24.401305)">
+    <g
+       id="g1" />
+    <g
+       id="g2" />
+    <g
+       id="g3" />
+    <g
+       id="g4" />
+    <g
+       id="g5" />
+    <g
+       id="g6" />
+    <g
+       id="g7" />
+    <g
+       id="g8" />
+    <g
+       id="g9" />
+    <g
+       id="g10" />
+    <g
+       id="g11" />
+    <g
+       id="g12" />
+    <g
+       id="g13" />
+    <g
+       id="g14" />
+    <g
+       id="g15" />
+    <g
+       id="g16" />
+    <g
+       id="g17" />
+    <g
+       id="g18" />
+    <g
+       id="g19" />
+    <g
+       id="g20" />
+    <g
+       id="g21" />
+    <g
+       id="g22" />
+    <g
+       id="g23" />
+    <g
+       id="g24" />
+    <g
+       id="g25" />
+    <g
+       id="g26" />
+    <g
+       id="g27" />
+    <g
+       id="g28" />
+    <g
+       id="g29" />
+    <g
+       id="g30" />
+    <g
+       id="g31" />
+    <g
+       id="g32" />
+    <g
+       id="g33" />
+    <g
+       id="g34" />
+    <g
+       id="g35" />
+    <g
+       id="g36" />
+    <g
+       id="g37" />
+    <g
+       id="g38" />
+    <g
+       id="g39" />
+    <g
+       id="g40" />
+    <g
+       id="g41" />
+    <g
+       id="g42" />
+    <g
+       id="g43" />
+    <g
+       id="g44" />
+    <g
+       id="g45" />
+    <g
+       id="g46" />
+    <g
+       id="g47" />
+    <g
+       id="g48" />
+    <g
+       id="g49" />
+    <g
+       id="g50" />
+    <g
+       id="g51" />
+    <g
+       id="g52" />
+    <g
+       id="g53" />
+    <g
+       id="g54" />
+    <g
+       id="g55" />
+    <g
+       id="g56" />
+    <g
+       id="g57" />
+    <g
+       id="g58" />
+    <g
+       id="g59" />
+    <g
+       id="g60" />
+    <g
+       id="g61" />
+    <g
+       id="g62" />
+    <g
+       id="g63" />
+    <g
+       id="g64" />
+    <g
+       id="g65" />
+    <g
+       id="g66" />
+    <g
+       id="g67" />
+    <g
+       id="g68" />
+    <g
+       id="g69" />
+    <g
+       id="g70" />
+    <g
+       id="g71" />
+    <g
+       id="g72" />
+    <g
+       id="g73" />
+    <g
+       id="g74" />
+    <g
+       id="g75" />
+    <g
+       id="g76" />
+    <g
+       id="g77" />
+    <g
+       id="g78" />
+    <g
+       id="g79" />
+    <g
+       id="g80" />
+    <g
+       id="g81" />
+    <g
+       id="g82" />
+    <g
+       id="g83" />
+    <g
+       id="g84" />
+    <g
+       id="g85" />
+    <g
+       id="g86" />
+    <g
+       id="g87" />
+    <g
+       id="g88" />
+    <g
+       id="g89" />
+    <g
+       id="g90" />
+    <g
+       id="g91" />
+    <g
+       id="g92" />
+    <g
+       id="g93" />
+    <g
+       id="g94" />
+    <g
+       id="g95" />
+    <g
+       id="g96" />
+    <g
+       id="g97" />
+    <g
+       id="g98" />
+    <g
+       id="g99" />
+    <g
+       id="g100" />
+    <g
+       id="g101" />
+    <g
+       id="g102" />
+    <g
+       id="g103" />
+    <g
+       id="g104" />
+    <g
+       id="g105" />
+    <g
+       id="g106" />
+    <g
+       id="g107" />
+    <g
+       id="g108" />
+    <g
+       id="g109" />
+    <g
+       id="g110" />
+    <g
+       id="g111" />
+    <g
+       id="g112" />
+    <g
+       id="g113" />
+    <g
+       id="g114" />
+    <g
+       id="g115" />
+    <g
+       id="g116" />
+    <g
+       id="g117" />
+    <g
+       id="g118" />
+    <g
+       id="g119" />
+    <g
+       id="g120" />
+    <g
+       id="g121" />
+    <g
+       id="g122" />
+    <g
+       id="g123" />
+    <g
+       id="g124" />
+    <g
+       id="g125" />
+    <g
+       id="g126" />
+    <g
+       id="g127" />
+    <g
+       id="g128" />
+    <g
+       id="g129" />
+    <g
+       id="g130" />
+    <g
+       id="g131" />
+    <g
+       id="g132" />
+    <g
+       id="g133" />
+    <g
+       id="g134" />
+    <g
+       id="g135" />
+    <g
+       id="g136" />
+    <g
+       id="g137" />
+    <g
+       id="g138" />
+    <g
+       id="g139" />
+    <g
+       id="g140" />
+    <g
+       id="g141" />
+    <g
+       id="g142" />
+    <g
+       id="g143" />
+    <g
+       id="g144" />
+    <g
+       id="g145" />
+    <g
+       id="g146" />
+    <g
+       id="g147" />
+    <g
+       id="g148" />
+    <g
+       id="g149" />
+    <g
+       id="g150" />
+    <g
+       id="g151" />
+    <g
+       id="g152" />
+    <g
+       id="g153" />
+    <g
+       id="g154" />
+    <g
+       id="g155" />
+    <g
+       id="g156" />
+    <g
+       id="g157" />
+    <g
+       id="g158" />
+    <g
+       id="g159" />
+    <g
+       id="g160" />
+    <g
+       id="g161" />
+    <g
+       id="g162" />
+    <g
+       id="g163" />
+    <g
+       id="g164" />
+    <g
+       id="g165" />
+    <g
+       id="g166" />
+    <g
+       id="g167">
+      <rect
+         fill="#ffffff"
+         stroke="none"
+         x="0"
+         y="0"
+         width="1175"
+         height="1833"
+         id="rect166" />
+    </g>
+    <g
+       id="g168" />
+    <g
+       id="g170">
+      <path
+         fill="none"
+         stroke="#000000"
+         paint-order="fill stroke markers"
+         d="M 72.232991,50.815048 V 1833.1114"
+         stroke-miterlimit="10"
+         stroke-width="1.25655"
+         stroke-dasharray="11.599, 5.02622"
+         id="path168" />
+      <path
+         fill="none"
+         stroke="#000000"
+         paint-order="fill stroke markers"
+         d="M 789.31771,50.815048 V 1833.1114"
+         stroke-miterlimit="10"
+         stroke-width="1.25655"
+         stroke-dasharray="11.599, 5.02622"
+         id="path169" />
+      <path
+         fill="none"
+         stroke="#000000"
+         paint-order="fill stroke markers"
+         d="M 1097.2774,50.815048 V 1833.1114"
+         stroke-miterlimit="10"
+         stroke-width="1.25655"
+         stroke-dasharray="11.599, 5.02622"
+         id="path170" />
+    </g>
+    <g
+       id="g181">
+      <path
+         fill="none"
+         stroke="none"
+         id="path171"
+         d="" />
+      <g
+         id="g172">
+        <path
+           fill="#ffffff"
+           stroke="#000000"
+           paint-order="fill stroke markers"
+           d="M 7.5393246,10.102695 H 136.92666 V 50.815048 H 7.5393246 Z"
+           stroke-miterlimit="10"
+           stroke-width="2.41258"
+           stroke-dasharray="none"
+           id="path172" />
+      </g>
+      <g
+         id="g174">
+        <g
+           id="g173" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="sans-serif"
+           font-size="14.6667px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="normal"
+           x="23.899658"
+           y="35.736397"
+           text-anchor="start"
+           dominant-baseline="alphabetic"
+           xml:space="preserve"
+           id="text173">SMTP Sender</text>
+      </g>
+      <path
+         fill="none"
+         stroke="none"
+         id="path174"
+         d="" />
+      <g
+         id="g175">
+        <path
+           fill="#ffffff"
+           stroke="#000000"
+           paint-order="fill stroke markers"
+           d="m 757.12405,10.102695 h 64.38733 v 40.712353 h -64.38733 z"
+           stroke-miterlimit="10"
+           stroke-width="2.41258"
+           stroke-dasharray="none"
+           id="path175" />
+      </g>
+      <g
+         id="g177">
+        <g
+           id="g176" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="sans-serif"
+           font-size="14.6667px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="normal"
+           x="773.48438"
+           y="35.736397"
+           text-anchor="start"
+           dominant-baseline="alphabetic"
+           xml:space="preserve"
+           id="text176">DNS</text>
+      </g>
+      <path
+         fill="none"
+         stroke="none"
+         id="path177"
+         d="" />
+      <g
+         id="g178">
+        <path
+           fill="#ffffff"
+           stroke="#000000"
+           paint-order="fill stroke markers"
+           d="m 1026.8546,10.102695 h 140.8457 v 40.712353 h -140.8457 z"
+           stroke-miterlimit="10"
+           stroke-width="2.41258"
+           stroke-dasharray="none"
+           id="path178" />
+      </g>
+      <g
+         id="g180">
+        <g
+           id="g179" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="sans-serif"
+           font-size="14.6667px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="normal"
+           x="1043.215"
+           y="35.736397"
+           text-anchor="start"
+           dominant-baseline="alphabetic"
+           xml:space="preserve"
+           id="text179">SMTP Reciever</text>
+      </g>
+    </g>
+    <g
+       id="g284">
+      <g
+         id="g182">
+        <rect
+           fill="#ffffff"
+           stroke="none"
+           x="264.84689"
+           y="80.972343"
+           width="331.85693"
+           height="19.602243"
+           id="rect181" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="sans-serif"
+           font-size="14.6667px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="normal"
+           x="267.10867"
+           y="94.543129"
+           text-anchor="start"
+           dominant-baseline="alphabetic"
+           xml:space="preserve"
+           id="text181">MX_Resource_Record_Question = gmail.com</text>
+      </g>
+      <g
+         id="g184">
+        <path
+           fill="none"
+           stroke="#000000"
+           paint-order="fill stroke markers"
+           d="M 72.232991,100.57459 H 787.43288"
+           stroke-miterlimit="10"
+           stroke-width="1.25655"
+           stroke-dasharray="none"
+           id="path182" />
+        <g
+           id="g183">
+          <path
+             fill="none"
+             stroke="#000000"
+             paint-order="fill stroke markers"
+             d="m 776.39903,94.811454 11.5061,5.763136 -11.5061,5.76314"
+             stroke-miterlimit="10"
+             stroke-width="1.25655"
+             id="path183" />
+        </g>
+      </g>
+      <g
+         id="g185">
+        <rect
+           fill="#ffffff"
+           stroke="none"
+           x="90.076057"
+           y="123.19257"
+           width="681.39862"
+           height="19.602243"
+           id="rect184" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="sans-serif"
+           font-size="14.6667px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="normal"
+           x="92.33786"
+           y="136.76335"
+           text-anchor="start"
+           dominant-baseline="alphabetic"
+           xml:space="preserve"
+           id="text184">MX_Record_Record_Answer = smtp.gmail.com,&lt;br /&gt;A_Resource_Record = 108.177.15.108</text>
+      </g>
+      <g
+         id="g187">
+        <path
+           fill="none"
+           stroke="#000000"
+           paint-order="fill stroke markers"
+           d="M 789.31771,142.79481 H 74.117822"
+           stroke-miterlimit="10"
+           stroke-width="1.25655"
+           stroke-dasharray="none"
+           id="path185" />
+        <g
+           id="g186">
+          <path
+             fill="none"
+             stroke="#000000"
+             paint-order="fill stroke markers"
+             d="m 85.151678,137.03167 -11.506102,5.76314 11.506102,5.76313"
+             stroke-miterlimit="10"
+             stroke-width="1.25655"
+             id="path186" />
+        </g>
+      </g>
+      <g
+         id="g188">
+        <rect
+           fill="#ffffff"
+           stroke="none"
+           x="489.93091"
+           y="165.41278"
+           width="189.64859"
+           height="19.602243"
+           id="rect187" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="sans-serif"
+           font-size="14.6667px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="normal"
+           x="492.19272"
+           y="178.98357"
+           text-anchor="start"
+           dominant-baseline="alphabetic"
+           xml:space="preserve"
+           id="text187">SYN,&lt;br /&gt;TCP Port = 25</text>
+      </g>
+      <g
+         id="g190">
+        <path
+           fill="none"
+           stroke="#000000"
+           paint-order="fill stroke markers"
+           d="M 72.232991,185.01503 H 1095.3926"
+           stroke-miterlimit="10"
+           stroke-width="1.25655"
+           stroke-dasharray="none"
+           id="path188" />
+        <g
+           id="g189">
+          <path
+             fill="none"
+             stroke="#000000"
+             paint-order="fill stroke markers"
+             d="m 1084.3588,179.25189 11.5061,5.76314 -11.5061,5.76313"
+             stroke-miterlimit="10"
+             stroke-width="1.25655"
+             id="path189" />
+        </g>
+      </g>
+      <g
+         id="g191">
+        <rect
+           fill="#ffffff"
+           stroke="none"
+           x="549.32672"
+           y="207.633"
+           width="70.856934"
+           height="19.602243"
+           id="rect190" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="sans-serif"
+           font-size="14.6667px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="normal"
+           x="551.58856"
+           y="221.20378"
+           text-anchor="start"
+           dominant-baseline="alphabetic"
+           xml:space="preserve"
+           id="text190">SYN_ACK</text>
+      </g>
+      <g
+         id="g193">
+        <path
+           fill="none"
+           stroke="#000000"
+           paint-order="fill stroke markers"
+           d="M 1097.2774,227.23524 H 74.117822"
+           stroke-miterlimit="10"
+           stroke-width="1.25655"
+           stroke-dasharray="none"
+           id="path191" />
+        <g
+           id="g192">
+          <path
+             fill="none"
+             stroke="#000000"
+             paint-order="fill stroke markers"
+             d="m 85.151678,221.47211 -11.506102,5.76313 11.506102,5.76314"
+             stroke-miterlimit="10"
+             stroke-width="1.25655"
+             id="path192" />
+        </g>
+      </g>
+      <g
+         id="g194">
+        <rect
+           fill="#ffffff"
+           stroke="none"
+           x="567.6601"
+           y="249.85321"
+           width="34.190262"
+           height="19.602243"
+           id="rect193" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="sans-serif"
+           font-size="14.6667px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="normal"
+           x="569.92188"
+           y="263.42401"
+           text-anchor="start"
+           dominant-baseline="alphabetic"
+           xml:space="preserve"
+           id="text193">ACK</text>
+      </g>
+      <g
+         id="g196">
+        <path
+           fill="none"
+           stroke="#000000"
+           paint-order="fill stroke markers"
+           d="M 72.232991,269.45546 H 1095.3926"
+           stroke-miterlimit="10"
+           stroke-width="1.25655"
+           stroke-dasharray="none"
+           id="path194" />
+        <g
+           id="g195">
+          <path
+             fill="none"
+             stroke="#000000"
+             paint-order="fill stroke markers"
+             d="m 1084.3588,263.69233 11.5061,5.76313 -11.5061,5.76314"
+             stroke-miterlimit="10"
+             stroke-width="1.25655"
+             id="path195" />
+        </g>
+      </g>
+      <g
+         id="g197">
+        <rect
+           fill="#ffffff"
+           stroke="none"
+           x="453.8476"
+           y="292.07343"
+           width="261.81525"
+           height="19.602243"
+           id="rect196" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="sans-serif"
+           font-size="14.6667px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="normal"
+           x="456.10938"
+           y="305.64423"
+           text-anchor="start"
+           dominant-baseline="alphabetic"
+           xml:space="preserve"
+           id="text196">220 smtp.gmail.com SMTP Ready\r</text>
+      </g>
+      <g
+         id="g199">
+        <path
+           fill="none"
+           stroke="#000000"
+           paint-order="fill stroke markers"
+           d="M 1097.2774,326.75433 H 74.117822"
+           stroke-miterlimit="10"
+           stroke-width="1.25655"
+           stroke-dasharray="none"
+           id="path197" />
+        <g
+           id="g198">
+          <path
+             fill="none"
+             stroke="#000000"
+             paint-order="fill stroke markers"
+             d="m 85.151678,320.99119 -11.506102,5.76314 11.506102,5.76313"
+             stroke-miterlimit="10"
+             stroke-width="1.25655"
+             id="path198" />
+        </g>
+      </g>
+      <g
+         id="g200">
+        <rect
+           fill="#ffffff"
+           stroke="none"
+           x="508.2226"
+           y="349.37231"
+           width="153.06526"
+           height="19.602243"
+           id="rect199" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="sans-serif"
+           font-size="14.6667px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="normal"
+           x="510.48438"
+           y="362.94308"
+           text-anchor="start"
+           dominant-baseline="alphabetic"
+           xml:space="preserve"
+           id="text199">HELO smtp.mail.ru\r</text>
+      </g>
+      <g
+         id="g202">
+        <path
+           fill="none"
+           stroke="#000000"
+           paint-order="fill stroke markers"
+           d="M 72.232991,384.0532 H 1095.3926"
+           stroke-miterlimit="10"
+           stroke-width="1.25655"
+           stroke-dasharray="none"
+           id="path200" />
+        <g
+           id="g201">
+          <path
+             fill="none"
+             stroke="#000000"
+             paint-order="fill stroke markers"
+             d="m 1084.3588,378.29006 11.5061,5.76314 -11.5061,5.76313"
+             stroke-miterlimit="10"
+             stroke-width="1.25655"
+             id="path201" />
+        </g>
+      </g>
+      <g
+         id="g203">
+        <rect
+           fill="#ffffff"
+           stroke="none"
+           x="567.6601"
+           y="406.67117"
+           width="34.190262"
+           height="19.602243"
+           id="rect202" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="sans-serif"
+           font-size="14.6667px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="normal"
+           x="569.92188"
+           y="420.24194"
+           text-anchor="start"
+           dominant-baseline="alphabetic"
+           xml:space="preserve"
+           id="text202">ACK</text>
+      </g>
+      <g
+         id="g205">
+        <path
+           fill="none"
+           stroke="#000000"
+           paint-order="fill stroke markers"
+           d="M 1097.2774,426.27341 H 74.117822"
+           stroke-miterlimit="10"
+           stroke-width="1.25655"
+           stroke-dasharray="none"
+           id="path203" />
+        <g
+           id="g204">
+          <path
+             fill="none"
+             stroke="#000000"
+             paint-order="fill stroke markers"
+             d="m 85.151678,420.51028 -11.506102,5.76313 11.506102,5.76314"
+             stroke-miterlimit="10"
+             stroke-width="1.25655"
+             id="path204" />
+        </g>
+      </g>
+      <g
+         id="g206">
+        <rect
+           fill="#ffffff"
+           stroke="none"
+           x="807.16077"
+           y="448.89139"
+           width="272.27359"
+           height="19.602243"
+           id="rect205" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="sans-serif"
+           font-size="14.6667px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="normal"
+           x="809.42261"
+           y="462.46216"
+           text-anchor="start"
+           dominant-baseline="alphabetic"
+           xml:space="preserve"
+           id="text205">Pointer Query&lt;br /&gt;217.69.139.160</text>
+      </g>
+      <g
+         id="g208">
+        <path
+           fill="none"
+           stroke="#000000"
+           paint-order="fill stroke markers"
+           d="M 1097.2774,468.49363 H 791.20255"
+           stroke-miterlimit="10"
+           stroke-width="1.25655"
+           stroke-dasharray="none"
+           id="path206" />
+        <g
+           id="g207">
+          <path
+             fill="none"
+             stroke="#000000"
+             paint-order="fill stroke markers"
+             d="m 802.2364,462.73049 -11.5061,5.76314 11.5061,5.76314"
+             stroke-miterlimit="10"
+             stroke-width="1.25655"
+             id="path207" />
+        </g>
+      </g>
+      <g
+         id="g209">
+        <rect
+           fill="#ffffff"
+           stroke="none"
+           x="841.63995"
+           y="491.1116"
+           width="203.31526"
+           height="19.602243"
+           id="rect208" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="sans-serif"
+           font-size="14.6667px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="normal"
+           x="843.90173"
+           y="504.6824"
+           text-anchor="start"
+           dominant-baseline="alphabetic"
+           xml:space="preserve"
+           id="text208">Pointer Reply: smtp.mail.ru</text>
+      </g>
+      <g
+         id="g211">
+        <path
+           fill="none"
+           stroke="#000000"
+           paint-order="fill stroke markers"
+           d="M 789.31771,510.71385 H 1095.3926"
+           stroke-miterlimit="10"
+           stroke-width="1.25655"
+           stroke-dasharray="none"
+           id="path209" />
+        <g
+           id="g210">
+          <path
+             fill="none"
+             stroke="#000000"
+             paint-order="fill stroke markers"
+             d="m 1084.3588,504.95071 11.5061,5.76314 -11.5061,5.76313"
+             stroke-miterlimit="10"
+             stroke-width="1.25655"
+             id="path210" />
+        </g>
+      </g>
+      <g
+         id="g212">
+        <rect
+           fill="#ffffff"
+           stroke="none"
+           x="498.93091"
+           y="533.33185"
+           width="171.64859"
+           height="19.602243"
+           id="rect211" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="sans-serif"
+           font-size="14.6667px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="normal"
+           x="501.19272"
+           y="546.90259"
+           text-anchor="start"
+           dominant-baseline="alphabetic"
+           xml:space="preserve"
+           id="text211">250 smpt.gmail.com \r</text>
+      </g>
+      <g
+         id="g214">
+        <path
+           fill="none"
+           stroke="#000000"
+           paint-order="fill stroke markers"
+           d="M 1097.2774,568.01272 H 74.117822"
+           stroke-miterlimit="10"
+           stroke-width="1.25655"
+           stroke-dasharray="none"
+           id="path212" />
+        <g
+           id="g213">
+          <path
+             fill="none"
+             stroke="#000000"
+             paint-order="fill stroke markers"
+             d="m 85.151678,562.24958 -11.506102,5.76314 11.506102,5.76313"
+             stroke-miterlimit="10"
+             stroke-width="1.25655"
+             id="path213" />
+        </g>
+      </g>
+      <g
+         id="g215">
+        <rect
+           fill="#ffffff"
+           stroke="none"
+           x="471.88925"
+           y="590.63068"
+           width="225.73192"
+           height="19.602243"
+           id="rect214" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="sans-serif"
+           font-size="14.6667px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="normal"
+           x="474.15106"
+           y="604.20148"
+           text-anchor="start"
+           dominant-baseline="alphabetic"
+           xml:space="preserve"
+           id="text214">VRFY john.silver jim hawkins\r</text>
+      </g>
+      <g
+         id="g217">
+        <path
+           fill="none"
+           stroke="#000000"
+           paint-order="fill stroke markers"
+           d="M 72.232991,625.31158 H 1095.3926"
+           stroke-miterlimit="10"
+           stroke-width="1.25655"
+           stroke-dasharray="none"
+           id="path215" />
+        <g
+           id="g216">
+          <path
+             fill="none"
+             stroke="#000000"
+             paint-order="fill stroke markers"
+             d="m 1084.3588,619.54845 11.5061,5.76313 -11.5061,5.76314"
+             stroke-miterlimit="10"
+             stroke-width="1.25655"
+             id="path216" />
+        </g>
+      </g>
+      <g
+         id="g218">
+        <rect
+           fill="#ffffff"
+           stroke="none"
+           x="465.36841"
+           y="647.92957"
+           width="238.77359"
+           height="19.602243"
+           id="rect217" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="sans-serif"
+           font-size="14.6667px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="normal"
+           x="467.63022"
+           y="661.50037"
+           text-anchor="start"
+           dominant-baseline="alphabetic"
+           xml:space="preserve"
+           id="text217">550 Unknown user: john.silver\r</text>
+      </g>
+      <g
+         id="g220">
+        <path
+           fill="none"
+           stroke="#000000"
+           paint-order="fill stroke markers"
+           d="M 1097.2774,682.61045 H 74.117822"
+           stroke-miterlimit="10"
+           stroke-width="1.25655"
+           stroke-dasharray="none"
+           id="path218" />
+        <g
+           id="g219">
+          <path
+             fill="none"
+             stroke="#000000"
+             paint-order="fill stroke markers"
+             d="m 85.151678,676.84731 -11.506102,5.76314 11.506102,5.76314"
+             stroke-miterlimit="10"
+             stroke-width="1.25655"
+             id="path219" />
+        </g>
+      </g>
+      <g
+         id="g221">
+        <rect
+           fill="#ffffff"
+           stroke="none"
+           x="512.24341"
+           y="705.22839"
+           width="145.02359"
+           height="19.602243"
+           id="rect220" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="sans-serif"
+           font-size="14.6667px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="normal"
+           x="514.50519"
+           y="718.79919"
+           text-anchor="start"
+           dominant-baseline="alphabetic"
+           xml:space="preserve"
+           id="text220">VRFY jim.hawkins\r</text>
+      </g>
+      <g
+         id="g223">
+        <path
+           fill="none"
+           stroke="#000000"
+           paint-order="fill stroke markers"
+           d="M 72.232991,739.90932 H 1095.3926"
+           stroke-miterlimit="10"
+           stroke-width="1.25655"
+           stroke-dasharray="none"
+           id="path221" />
+        <g
+           id="g222">
+          <path
+             fill="none"
+             stroke="#000000"
+             paint-order="fill stroke markers"
+             d="m 1084.3588,734.14618 11.5061,5.76314 -11.5061,5.76313"
+             stroke-miterlimit="10"
+             stroke-width="1.25655"
+             id="path222" />
+        </g>
+      </g>
+      <g
+         id="g224">
+        <rect
+           fill="#ffffff"
+           stroke="none"
+           x="549.99341"
+           y="762.52728"
+           width="69.523598"
+           height="19.602243"
+           id="rect223" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="sans-serif"
+           font-size="14.6667px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="normal"
+           x="552.25519"
+           y="776.09808"
+           text-anchor="start"
+           dominant-baseline="alphabetic"
+           xml:space="preserve"
+           id="text223">250 OK\r</text>
+      </g>
+      <g
+         id="g226">
+        <path
+           fill="none"
+           stroke="#000000"
+           paint-order="fill stroke markers"
+           d="M 1097.2774,797.20818 H 74.117822"
+           stroke-miterlimit="10"
+           stroke-width="1.25655"
+           stroke-dasharray="none"
+           id="path224" />
+        <g
+           id="g225">
+          <path
+             fill="none"
+             stroke="#000000"
+             paint-order="fill stroke markers"
+             d="m 85.151678,791.44505 -11.506102,5.76313 11.506102,5.76314"
+             stroke-miterlimit="10"
+             stroke-width="1.25655"
+             id="path225" />
+        </g>
+      </g>
+      <g
+         id="g227">
+        <rect
+           fill="#ffffff"
+           stroke="none"
+           x="520.95178"
+           y="819.82617"
+           width="127.60693"
+           height="19.602243"
+           id="rect226" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="sans-serif"
+           font-size="14.6667px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="normal"
+           x="523.21356"
+           y="833.39691"
+           text-anchor="start"
+           dominant-baseline="alphabetic"
+           xml:space="preserve"
+           id="text226">VRFY ben.gunn\r</text>
+      </g>
+      <g
+         id="g229">
+        <path
+           fill="none"
+           stroke="#000000"
+           paint-order="fill stroke markers"
+           d="M 72.232991,854.50705 H 1095.3926"
+           stroke-miterlimit="10"
+           stroke-width="1.25655"
+           stroke-dasharray="none"
+           id="path227" />
+        <g
+           id="g228">
+          <path
+             fill="none"
+             stroke="#000000"
+             paint-order="fill stroke markers"
+             d="m 1084.3588,848.74391 11.5061,5.76314 -11.5061,5.76314"
+             stroke-miterlimit="10"
+             stroke-width="1.25655"
+             id="path228" />
+        </g>
+      </g>
+      <g
+         id="g230">
+        <rect
+           fill="#ffffff"
+           stroke="none"
+           x="549.99341"
+           y="877.125"
+           width="69.523598"
+           height="19.602243"
+           id="rect229" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="sans-serif"
+           font-size="14.6667px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="normal"
+           x="552.25519"
+           y="890.6958"
+           text-anchor="start"
+           dominant-baseline="alphabetic"
+           xml:space="preserve"
+           id="text229">250 OK\r</text>
+      </g>
+      <g
+         id="g232">
+        <path
+           fill="none"
+           stroke="#000000"
+           paint-order="fill stroke markers"
+           d="M 1097.2774,911.80592 H 74.117822"
+           stroke-miterlimit="10"
+           stroke-width="1.25655"
+           stroke-dasharray="none"
+           id="path230" />
+        <g
+           id="g231">
+          <path
+             fill="none"
+             stroke="#000000"
+             paint-order="fill stroke markers"
+             d="m 85.151678,906.04278 -11.506102,5.76314 11.506102,5.76313"
+             stroke-miterlimit="10"
+             stroke-width="1.25655"
+             id="path231" />
+        </g>
+      </g>
+      <g
+         id="g233">
+        <rect
+           fill="#ffffff"
+           stroke="none"
+           x="440.49341"
+           y="934.42389"
+           width="288.52359"
+           height="19.602243"
+           id="rect232" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="sans-serif"
+           font-size="14.6667px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="normal"
+           x="442.75522"
+           y="947.99469"
+           text-anchor="start"
+           dominant-baseline="alphabetic"
+           xml:space="preserve"
+           id="text232">MAIL FROM:captain.smollett@mail.ru\r</text>
+      </g>
+      <g
+         id="g235">
+        <path
+           fill="none"
+           stroke="#000000"
+           paint-order="fill stroke markers"
+           d="M 72.232991,969.10478 H 1095.3926"
+           stroke-miterlimit="10"
+           stroke-width="1.25655"
+           stroke-dasharray="none"
+           id="path233" />
+        <g
+           id="g234">
+          <path
+             fill="none"
+             stroke="#000000"
+             paint-order="fill stroke markers"
+             d="m 1084.3588,963.34165 11.5061,5.76313 -11.5061,5.76314"
+             stroke-miterlimit="10"
+             stroke-width="1.25655"
+             id="path234" />
+        </g>
+      </g>
+      <g
+         id="g236">
+        <rect
+           fill="#ffffff"
+           stroke="none"
+           x="549.99341"
+           y="991.72278"
+           width="69.523598"
+           height="19.602243"
+           id="rect235" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="sans-serif"
+           font-size="14.6667px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="normal"
+           x="552.25519"
+           y="1005.2935"
+           text-anchor="start"
+           dominant-baseline="alphabetic"
+           xml:space="preserve"
+           id="text235">250 OK\r</text>
+      </g>
+      <g
+         id="g238">
+        <path
+           fill="none"
+           stroke="#000000"
+           paint-order="fill stroke markers"
+           d="M 1097.2774,1026.4037 H 74.117822"
+           stroke-miterlimit="10"
+           stroke-width="1.25655"
+           stroke-dasharray="none"
+           id="path236" />
+        <g
+           id="g237">
+          <path
+             fill="none"
+             stroke="#000000"
+             paint-order="fill stroke markers"
+             d="m 85.151678,1020.6405 -11.506102,5.7632 11.506102,5.7631"
+             stroke-miterlimit="10"
+             stroke-width="1.25655"
+             id="path237" />
+        </g>
+      </g>
+      <g
+         id="g239">
+        <rect
+           fill="#ffffff"
+           stroke="none"
+           x="459.36841"
+           y="1049.0216"
+           width="250.77359"
+           height="19.602243"
+           id="rect238" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="sans-serif"
+           font-size="14.6667px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="normal"
+           x="461.63022"
+           y="1062.5924"
+           text-anchor="start"
+           dominant-baseline="alphabetic"
+           xml:space="preserve"
+           id="text238">RCPT TO:john.silver@gmail.com\r</text>
+      </g>
+      <g
+         id="g241">
+        <path
+           fill="none"
+           stroke="#000000"
+           paint-order="fill stroke markers"
+           d="M 72.232991,1083.7025 H 1095.3926"
+           stroke-miterlimit="10"
+           stroke-width="1.25655"
+           stroke-dasharray="none"
+           id="path239" />
+        <g
+           id="g240">
+          <path
+             fill="none"
+             stroke="#000000"
+             paint-order="fill stroke markers"
+             d="m 1084.3588,1077.9394 11.5061,5.7631 -11.5061,5.7632"
+             stroke-miterlimit="10"
+             stroke-width="1.25655"
+             id="path240" />
+        </g>
+      </g>
+      <g
+         id="g242">
+        <rect
+           fill="#ffffff"
+           stroke="none"
+           x="549.99341"
+           y="1106.3204"
+           width="69.523598"
+           height="19.602243"
+           id="rect241" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="sans-serif"
+           font-size="14.6667px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="normal"
+           x="552.25519"
+           y="1119.8912"
+           text-anchor="start"
+           dominant-baseline="alphabetic"
+           xml:space="preserve"
+           id="text241">250 OK\r</text>
+      </g>
+      <g
+         id="g244">
+        <path
+           fill="none"
+           stroke="#000000"
+           paint-order="fill stroke markers"
+           d="M 1097.2774,1141.0014 H 74.117822"
+           stroke-miterlimit="10"
+           stroke-width="1.25655"
+           stroke-dasharray="none"
+           id="path242" />
+        <g
+           id="g243">
+          <path
+             fill="none"
+             stroke="#000000"
+             paint-order="fill stroke markers"
+             d="m 85.151678,1135.2382 -11.506102,5.7632 11.506102,5.7631"
+             stroke-miterlimit="10"
+             stroke-width="1.25655"
+             id="path243" />
+        </g>
+      </g>
+      <g
+         id="g245">
+        <rect
+           fill="#ffffff"
+           stroke="none"
+           x="453.82675"
+           y="1163.6194"
+           width="261.85693"
+           height="19.602243"
+           id="rect244" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="sans-serif"
+           font-size="14.6667px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="normal"
+           x="456.08856"
+           y="1177.1902"
+           text-anchor="start"
+           dominant-baseline="alphabetic"
+           xml:space="preserve"
+           id="text244">RCPT TO:jim.hawkins@gmail.com\r</text>
+      </g>
+      <g
+         id="g247">
+        <path
+           fill="none"
+           stroke="#000000"
+           paint-order="fill stroke markers"
+           d="M 72.232991,1198.3003 H 1095.3926"
+           stroke-miterlimit="10"
+           stroke-width="1.25655"
+           stroke-dasharray="none"
+           id="path245" />
+        <g
+           id="g246">
+          <path
+             fill="none"
+             stroke="#000000"
+             paint-order="fill stroke markers"
+             d="m 1084.3588,1192.5371 11.5061,5.7632 -11.5061,5.7631"
+             stroke-miterlimit="10"
+             stroke-width="1.25655"
+             id="path246" />
+        </g>
+      </g>
+      <g
+         id="g248">
+        <rect
+           fill="#ffffff"
+           stroke="none"
+           x="549.99341"
+           y="1220.9182"
+           width="69.523598"
+           height="19.602243"
+           id="rect247" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="sans-serif"
+           font-size="14.6667px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="normal"
+           x="552.25519"
+           y="1234.489"
+           text-anchor="start"
+           dominant-baseline="alphabetic"
+           xml:space="preserve"
+           id="text247">250 OK\r</text>
+      </g>
+      <g
+         id="g250">
+        <path
+           fill="none"
+           stroke="#000000"
+           paint-order="fill stroke markers"
+           d="M 1097.2774,1255.5991 H 74.117822"
+           stroke-miterlimit="10"
+           stroke-width="1.25655"
+           stroke-dasharray="none"
+           id="path248" />
+        <g
+           id="g249">
+          <path
+             fill="none"
+             stroke="#000000"
+             paint-order="fill stroke markers"
+             d="m 85.151678,1249.836 -11.506102,5.7631 11.506102,5.7632"
+             stroke-miterlimit="10"
+             stroke-width="1.25655"
+             id="path249" />
+        </g>
+      </g>
+      <g
+         id="g251">
+        <rect
+           fill="#ffffff"
+           stroke="none"
+           x="558.05591"
+           y="1278.217"
+           width="53.398594"
+           height="19.602243"
+           id="rect250" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="sans-serif"
+           font-size="14.6667px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="normal"
+           x="560.31769"
+           y="1291.7878"
+           text-anchor="start"
+           dominant-baseline="alphabetic"
+           xml:space="preserve"
+           id="text250">DATA\r</text>
+      </g>
+      <g
+         id="g253">
+        <path
+           fill="none"
+           stroke="#000000"
+           paint-order="fill stroke markers"
+           d="M 72.232991,1312.898 H 1095.3926"
+           stroke-miterlimit="10"
+           stroke-width="1.25655"
+           stroke-dasharray="none"
+           id="path251" />
+        <g
+           id="g252">
+          <path
+             fill="none"
+             stroke="#000000"
+             paint-order="fill stroke markers"
+             d="m 1084.3588,1307.1348 11.5061,5.7632 -11.5061,5.7631"
+             stroke-miterlimit="10"
+             stroke-width="1.25655"
+             id="path252" />
+        </g>
+      </g>
+      <g
+         id="g254">
+        <rect
+           fill="#ffffff"
+           stroke="none"
+           x="479.99341"
+           y="1335.516"
+           width="209.52359"
+           height="19.602243"
+           id="rect253" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="sans-serif"
+           font-size="14.6667px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="normal"
+           x="482.25522"
+           y="1349.0868"
+           text-anchor="start"
+           dominant-baseline="alphabetic"
+           xml:space="preserve"
+           id="text253">354 Enter e-mail, end with .</text>
+      </g>
+      <g
+         id="g256">
+        <path
+           fill="none"
+           stroke="#000000"
+           paint-order="fill stroke markers"
+           d="M 1097.2774,1355.1182 H 74.117822"
+           stroke-miterlimit="10"
+           stroke-width="1.25655"
+           stroke-dasharray="none"
+           id="path254" />
+        <g
+           id="g255">
+          <path
+             fill="none"
+             stroke="#000000"
+             paint-order="fill stroke markers"
+             d="m 85.151678,1349.3551 -11.506102,5.7631 11.506102,5.7631"
+             stroke-miterlimit="10"
+             stroke-width="1.25655"
+             id="path255" />
+        </g>
+      </g>
+      <g
+         id="g257">
+        <rect
+           fill="#ffffff"
+           stroke="none"
+           x="412.9101"
+           y="1377.7362"
+           width="343.69025"
+           height="19.602243"
+           id="rect256" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="sans-serif"
+           font-size="14.6667px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="normal"
+           x="415.17188"
+           y="1391.307"
+           text-anchor="start"
+           dominant-baseline="alphabetic"
+           xml:space="preserve"
+           id="text256">*Заголовки, пустая строка, текст письма*\r</text>
+      </g>
+      <g
+         id="g259">
+        <path
+           fill="none"
+           stroke="#000000"
+           paint-order="fill stroke markers"
+           d="M 72.232991,1412.4171 H 1095.3926"
+           stroke-miterlimit="10"
+           stroke-width="1.25655"
+           stroke-dasharray="none"
+           id="path257" />
+        <g
+           id="g258">
+          <path
+             fill="none"
+             stroke="#000000"
+             paint-order="fill stroke markers"
+             d="m 1084.3588,1406.6539 11.5061,5.7632 -11.5061,5.7631"
+             stroke-miterlimit="10"
+             stroke-width="1.25655"
+             id="path258" />
+        </g>
+      </g>
+      <g
+         id="g260">
+        <rect
+           fill="#ffffff"
+           stroke="none"
+           x="567.6601"
+           y="1435.035"
+           width="34.190262"
+           height="19.602243"
+           id="rect259" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="sans-serif"
+           font-size="14.6667px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="normal"
+           x="569.92188"
+           y="1448.6058"
+           text-anchor="start"
+           dominant-baseline="alphabetic"
+           xml:space="preserve"
+           id="text259">ACK</text>
+      </g>
+      <g
+         id="g262">
+        <path
+           fill="none"
+           stroke="#000000"
+           paint-order="fill stroke markers"
+           d="M 1097.2774,1454.6373 H 74.117822"
+           stroke-miterlimit="10"
+           stroke-width="1.25655"
+           stroke-dasharray="none"
+           id="path260" />
+        <g
+           id="g261">
+          <path
+             fill="none"
+             stroke="#000000"
+             paint-order="fill stroke markers"
+             d="m 85.151678,1448.8742 -11.506102,5.7631 11.506102,5.7631"
+             stroke-miterlimit="10"
+             stroke-width="1.25655"
+             id="path261" />
+        </g>
+      </g>
+      <g
+         id="g263">
+        <rect
+           fill="#ffffff"
+           stroke="none"
+           x="574.6601"
+           y="1477.2552"
+           width="20.190262"
+           height="19.602243"
+           id="rect262" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="sans-serif"
+           font-size="14.6667px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="normal"
+           x="576.92188"
+           y="1490.826"
+           text-anchor="start"
+           dominant-baseline="alphabetic"
+           xml:space="preserve"
+           id="text262">.\r</text>
+      </g>
+      <g
+         id="g265">
+        <path
+           fill="none"
+           stroke="#000000"
+           paint-order="fill stroke markers"
+           d="M 72.232991,1511.9362 H 1095.3926"
+           stroke-miterlimit="10"
+           stroke-width="1.25655"
+           stroke-dasharray="none"
+           id="path263" />
+        <g
+           id="g264">
+          <path
+             fill="none"
+             stroke="#000000"
+             paint-order="fill stroke markers"
+             d="m 1084.3588,1506.173 11.5061,5.7632 -11.5061,5.7631"
+             stroke-miterlimit="10"
+             stroke-width="1.25655"
+             id="path264" />
+        </g>
+      </g>
+      <g
+         id="g266">
+        <rect
+           fill="#ffffff"
+           stroke="none"
+           x="496.57675"
+           y="1534.5541"
+           width="176.35692"
+           height="19.602243"
+           id="rect265" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="sans-serif"
+           font-size="14.6667px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="normal"
+           x="498.83856"
+           y="1548.1249"
+           text-anchor="start"
+           dominant-baseline="alphabetic"
+           xml:space="preserve"
+           id="text265">250 OK Mail accepted\r</text>
+      </g>
+      <g
+         id="g268">
+        <path
+           fill="none"
+           stroke="#000000"
+           paint-order="fill stroke markers"
+           d="M 1097.2774,1569.235 H 74.117822"
+           stroke-miterlimit="10"
+           stroke-width="1.25655"
+           stroke-dasharray="none"
+           id="path266" />
+        <g
+           id="g267">
+          <path
+             fill="none"
+             stroke="#000000"
+             paint-order="fill stroke markers"
+             d="m 85.151678,1563.4719 -11.506102,5.7631 11.506102,5.7632"
+             stroke-miterlimit="10"
+             stroke-width="1.25655"
+             id="path267" />
+        </g>
+      </g>
+      <g
+         id="g269">
+        <rect
+           fill="#ffffff"
+           stroke="none"
+           x="564.6601"
+           y="1591.853"
+           width="40.190262"
+           height="19.602243"
+           id="rect268" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="sans-serif"
+           font-size="14.6667px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="normal"
+           x="566.92188"
+           y="1605.4238"
+           text-anchor="start"
+           dominant-baseline="alphabetic"
+           xml:space="preserve"
+           id="text268">QUIT</text>
+      </g>
+      <g
+         id="g271">
+        <path
+           fill="none"
+           stroke="#000000"
+           paint-order="fill stroke markers"
+           d="M 72.232991,1611.4552 H 1095.3926"
+           stroke-miterlimit="10"
+           stroke-width="1.25655"
+           stroke-dasharray="none"
+           id="path269" />
+        <g
+           id="g270">
+          <path
+             fill="none"
+             stroke="#000000"
+             paint-order="fill stroke markers"
+             d="m 1084.3588,1605.6921 11.5061,5.7631 -11.5061,5.7632"
+             stroke-miterlimit="10"
+             stroke-width="1.25655"
+             id="path270" />
+        </g>
+      </g>
+      <g
+         id="g272">
+        <rect
+           fill="#ffffff"
+           stroke="none"
+           x="570.5976"
+           y="1634.0732"
+           width="28.31526"
+           height="19.602243"
+           id="rect271" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="sans-serif"
+           font-size="14.6667px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="normal"
+           x="572.85938"
+           y="1647.644"
+           text-anchor="start"
+           dominant-baseline="alphabetic"
+           xml:space="preserve"
+           id="text271">FIN</text>
+      </g>
+      <g
+         id="g274">
+        <path
+           fill="none"
+           stroke="#000000"
+           paint-order="fill stroke markers"
+           d="M 1097.2774,1653.6755 H 74.117822"
+           stroke-miterlimit="10"
+           stroke-width="1.25655"
+           stroke-dasharray="none"
+           id="path272" />
+        <g
+           id="g273">
+          <path
+             fill="none"
+             stroke="#000000"
+             paint-order="fill stroke markers"
+             d="m 85.151678,1647.9123 -11.506102,5.7632 11.506102,5.7631"
+             stroke-miterlimit="10"
+             stroke-width="1.25655"
+             id="path273" />
+        </g>
+      </g>
+      <g
+         id="g275">
+        <rect
+           fill="#ffffff"
+           stroke="none"
+           x="567.6601"
+           y="1676.2935"
+           width="34.190262"
+           height="19.602243"
+           id="rect274" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="sans-serif"
+           font-size="14.6667px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="normal"
+           x="569.92188"
+           y="1689.8643"
+           text-anchor="start"
+           dominant-baseline="alphabetic"
+           xml:space="preserve"
+           id="text274">ACK</text>
+      </g>
+      <g
+         id="g277">
+        <path
+           fill="none"
+           stroke="#000000"
+           paint-order="fill stroke markers"
+           d="M 72.232991,1695.8957 H 1095.3926"
+           stroke-miterlimit="10"
+           stroke-width="1.25655"
+           stroke-dasharray="none"
+           id="path275" />
+        <g
+           id="g276">
+          <path
+             fill="none"
+             stroke="#000000"
+             paint-order="fill stroke markers"
+             d="m 1084.3588,1690.1325 11.5061,5.7632 -11.5061,5.7631"
+             stroke-miterlimit="10"
+             stroke-width="1.25655"
+             id="path276" />
+        </g>
+      </g>
+      <g
+         id="g278">
+        <rect
+           fill="#ffffff"
+           stroke="none"
+           x="570.5976"
+           y="1718.5137"
+           width="28.31526"
+           height="19.602243"
+           id="rect277" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="sans-serif"
+           font-size="14.6667px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="normal"
+           x="572.85938"
+           y="1732.0845"
+           text-anchor="start"
+           dominant-baseline="alphabetic"
+           xml:space="preserve"
+           id="text277">FIN</text>
+      </g>
+      <g
+         id="g280">
+        <path
+           fill="none"
+           stroke="#000000"
+           paint-order="fill stroke markers"
+           d="M 72.232991,1738.1159 H 1095.3926"
+           stroke-miterlimit="10"
+           stroke-width="1.25655"
+           stroke-dasharray="none"
+           id="path278" />
+        <g
+           id="g279">
+          <path
+             fill="none"
+             stroke="#000000"
+             paint-order="fill stroke markers"
+             d="m 1084.3588,1732.3528 11.5061,5.7631 -11.5061,5.7631"
+             stroke-miterlimit="10"
+             stroke-width="1.25655"
+             id="path279" />
+        </g>
+      </g>
+      <g
+         id="g281">
+        <rect
+           fill="#ffffff"
+           stroke="none"
+           x="567.6601"
+           y="1760.7339"
+           width="34.190262"
+           height="19.602243"
+           id="rect280" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="sans-serif"
+           font-size="14.6667px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="normal"
+           x="569.92188"
+           y="1774.3047"
+           text-anchor="start"
+           dominant-baseline="alphabetic"
+           xml:space="preserve"
+           id="text280">ACK</text>
+      </g>
+      <g
+         id="g283">
+        <path
+           fill="none"
+           stroke="#000000"
+           paint-order="fill stroke markers"
+           d="M 1097.2774,1780.3361 H 74.117822"
+           stroke-miterlimit="10"
+           stroke-width="1.25655"
+           stroke-dasharray="none"
+           id="path281" />
+        <g
+           id="g282">
+          <path
+             fill="none"
+             stroke="#000000"
+             paint-order="fill stroke markers"
+             d="m 85.151678,1774.573 -11.506102,5.7631 11.506102,5.7631"
+             stroke-miterlimit="10"
+             stroke-width="1.25655"
+             id="path282" />
+        </g>
+      </g>
+    </g>
+    <g
+       id="g285" />
+    <g
+       id="g286" />
+    <g
+       id="g287" />
+  </g>
+</svg>
