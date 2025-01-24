@@ -29,6 +29,7 @@
 Благодаря вариантам, можно проводить несколько раундов игры с одними и теми же участниками.
 
 Ниже представлены сценарии для игры в виде даиграмм последовательностей.
+Диаграмы последовательностей хранятся в формате [mermaid](https://mermaid.js.org/), их можно скопировать в окно на сайте [sequencediagram.org](https://sequencediagram.org/), сохранить в SVG и затем подготовить PDF.
 
 ## Микросервисная архитектура
 
@@ -36,6 +37,8 @@
 * Просрочен `access_token`, не просрочен `refresh_token`.
 * Просрочены и `access_token` и `refresh_token`.
 * Запись не найдена в Postgres.
+
+[Диаграмма последовательности в PDF](https://github.com/user-attachments/files/18534720/seq-diag-microservice.pdf)
 
 ```mermaid
 sequenceDiagram
@@ -59,6 +62,8 @@ sequenceDiagram
 
 Поскольку у DNS-сервера обязанностей немного, в его роли может выступить *Ведущий*.
 Тогда в игру смогут активно играть два игрока.
+
+[Диаграмма последовательности в PDF](https://github.com/user-attachments/files/18534723/seq-diag-smtp.pdf)
 
 ```mermaid
 sequenceDiagram
